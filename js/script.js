@@ -8,7 +8,7 @@ var kaartOmgedraaid = false;
 var eersteKaart, tweedeKaart;
 var bordSlot = false;
 var restart = document.querySelector('button');
-var gegevens = ['Allyssa Alimoestar', '123'];
+var gegevens = ['Allyssa', '123'];
 var moves = 0;
 var openKaarten = 0;
 var counter = document.querySelector(".moves");
