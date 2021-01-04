@@ -2,4 +2,4 @@
 https://allyssaa.github.io/memory-game/
 
 
-Eindopdracht Inleiding programmeren  
+Eindopdracht Inleiding Programmeren  
