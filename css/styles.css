@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: cadetblue;
+}
+
+h1 {
+    color: beige;
+    padding: 50px 100px;
+}
+
+button {
+    background-color: orange;
+    height: 50px;
+    width: 100px;
+    margin-top: 100px;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 440px;
+    perspective: 1000px;
+    width: 540px;
+}
+
+.memory-kaart {
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    width: calc(25% - 10px);
+}
+
+.memory-kaart:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-kaart.omdraaien {
+    transform: rotateY(180deg);
+}
+
+.achterkant,
+.voorkant {
+    backface-visibility: hidden;
+    background-color: aqua;
+    border-radius: 5px;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+
+}
+
+/*https://marina-ferreira.github.io/tutorials/js/memory-game/*/
+.voorkant {
+    transform: rotateY(180deg);
+}
+
+.moves {
+    height: 50px;
+    width: 100px;
+    margin-top: 100px;
+}
+
+.gegevens,
+.gefeliciteerd {
+    width: 230px;
+    margin-top: 100px;
+}
